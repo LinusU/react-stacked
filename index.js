@@ -62,6 +62,7 @@ exports.HStack = function HStack (props) {
         borderBottomRightRadius: borderRadius(props.borderBottomRightRadius, props.borderRadius),
         borderTopLeftRadius: borderRadius(props.borderTopLeftRadius, props.borderRadius),
         borderTopRightRadius: borderRadius(props.borderTopRightRadius, props.borderRadius),
+        boxSizing: 'border-box',
         display: 'flex',
         flexDirection: 'row',
         flexGrow: props.grow,
@@ -91,6 +92,7 @@ exports.VStack = function VStack (props) {
       style: {
         alignItems: alignItems(props.alignItems),
         backgroundColor: props.backgroundColor,
+        boxSizing: 'border-box',
         display: 'flex',
         flexDirection: 'column',
         flexGrow: props.grow,
