@@ -1,0 +1,15 @@
+{
+  "name": "react-stacked",
+  "version": "0.0.0",
+  "license": "MIT",
+  "repository": "LinusU/react-zebra",
+  "scripts": {
+    "test": "standard"
+  },
+  "peerDependencies": {
+    "react": ">=16"
+  },
+  "devDependencies": {
+    "standard": "^14.3.4"
+  }
+}
