@@ -31,6 +31,8 @@ export interface StackProps {
   /** The maximum height of the container. */
   maxHeight?: string | number
 
+  /** The flex basis of the container. */
+  basis?: string | number
   /** The flex grow factor of the container. */
   grow?: string | number
   /** The flex shrink factor of the container. */
