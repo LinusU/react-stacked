@@ -40,6 +40,8 @@ exports.Text = function Text (props) {
     {
       style: {
         color: props.color,
+        flexGrow: props.grow,
+        flexShrink: props.shrink,
         fontSize: props.size,
         fontWeight: props.weight
       }

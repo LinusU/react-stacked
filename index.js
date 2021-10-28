@@ -42,6 +42,8 @@ exports.Text = function Text (props) {
     {
       style: {
         color: props.color,
+        flexGrow: props.grow,
+        flexShrink: props.shrink,
         fontFamily: 'system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif',
         fontSize: (props.size === 0) ? 0 : (props.size || '14px'),
         fontWeight: props.weight

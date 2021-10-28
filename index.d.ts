@@ -1,6 +1,11 @@
 import { FC } from 'react'
 
 export interface TextProps {
+  /** The flex grow factor of the element. */
+  grow?: string | number
+  /** The flex shrink factor of the element. */
+  shrink?: string | number
+
   color?: string
   size?: string | number
   weight?: 'bold'
