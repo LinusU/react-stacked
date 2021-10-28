@@ -2,6 +2,7 @@ import { FC } from 'react'
 
 export interface TextProps {
   color?: string
+  overflow?: 'ellipsis' | null
   size?: string | number
   weight?: 'bold'
 }

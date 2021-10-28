@@ -44,7 +44,10 @@ exports.Text = function Text (props) {
         color: props.color,
         fontFamily: 'system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif',
         fontSize: (props.size === 0) ? 0 : (props.size || '14px'),
-        fontWeight: props.weight
+        fontWeight: props.weight,
+        overflow: props.overflow === 'ellipsis' ? 'hidden' : undefined,
+        textOverflow: props.overflow === 'ellipsis' ? 'ellipsis' : undefined,
+        whiteSpace: props.overflow === 'ellipsis' ? 'nowrap' : undefined,
       }
     },
     props.children
