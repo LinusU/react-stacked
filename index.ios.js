@@ -41,6 +41,8 @@ exports.Text = function Text (props) {
       numberOfLines: props.overflow === 'ellipsis' ? 1 : undefined,
       style: {
         color: props.color,
+        flexGrow: props.grow,
+        flexShrink: props.shrink,
         fontSize: props.size,
         fontWeight: props.weight
       }
