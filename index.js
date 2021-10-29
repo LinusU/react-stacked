@@ -36,20 +36,53 @@ function padding (specific, axis, general) {
   return undefined
 }
 
-exports.Text = function Text (props) {
+exports.TextStyle = function TextStyle (props) {
   return React.createElement(
     'span',
     {
       style: {
         color: props.color,
+        fontFamily: 'system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif',
+        fontSize: (props.size === 0) ? 0 : (props.size || '14px'),
+        fontWeight: props.weight
+      }
+    },
+    props.children
+  )
+}
+
+exports.Text = function Text (props) {
+  return React.createElement(
+    'div',
+    {
+      style: {
+        backgroundColor: props.backgroundColor,
+        borderBottomLeftRadius: borderRadius(props.borderBottomLeftRadius, props.borderRadius),
+        borderBottomRightRadius: borderRadius(props.borderBottomRightRadius, props.borderRadius),
+        borderTopLeftRadius: borderRadius(props.borderTopLeftRadius, props.borderRadius),
+        borderTopRightRadius: borderRadius(props.borderTopRightRadius, props.borderRadius),
+        boxSizing: 'border-box',
+        color: props.color,
+        flexBasis: (typeof props.basis === 'number' ? (props.basis + 'px') : props.basis),
         flexGrow: props.grow,
         flexShrink: props.shrink,
         fontFamily: 'system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif',
         fontSize: (props.size === 0) ? 0 : (props.size || '14px'),
         fontWeight: props.weight,
+        height: (typeof props.height === 'number' ? (props.height + 'px') : props.height),
+        maxHeight: (typeof props.maxHeight === 'number' ? (props.maxHeight + 'px') : props.maxHeight),
+        maxWidth: (typeof props.maxWidth === 'number' ? (props.maxWidth + 'px') : props.maxWidth),
+        minHeight: (typeof props.minHeight === 'number' ? (props.minHeight + 'px') : props.minHeight),
+        minWidth: (typeof props.minWidth === 'number' ? (props.minWidth + 'px') : props.minWidth),
         overflow: props.overflow === 'ellipsis' ? 'hidden' : undefined,
+        paddingBottom: padding(props.paddingBottom, props.paddingVertical, props.padding),
+        paddingLeft: padding(props.paddingLeft, props.paddingHorizontal, props.padding),
+        paddingRight: padding(props.paddingRight, props.paddingHorizontal, props.padding),
+        paddingTop: padding(props.paddingTop, props.paddingVertical, props.padding),
+        textAlign: props.align == null ? undefined : props.align,
         textOverflow: props.overflow === 'ellipsis' ? 'ellipsis' : undefined,
         whiteSpace: props.overflow === 'ellipsis' ? 'nowrap' : undefined,
+        width: (typeof props.width === 'number' ? (props.width + 'px') : props.width)
       }
     },
     props.children
