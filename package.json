@@ -4,7 +4,7 @@
   "license": "MIT",
   "repository": "LinusU/react-zebra",
   "scripts": {
-    "test": "standard"
+    "test": "standard && ts-readme-generator --check"
   },
   "peerDependencies": {
     "react": ">=16"
