@@ -73,6 +73,7 @@ overflow | optional | `'ellipsis' \| null`
 color | optional | `string`
 size | optional | `string \| number`
 weight | optional | `'bold'`
+alignSelf | optional | `'baseline' \| 'center' \| 'end' \| 'start' \| 'stretch'` | Override alignment along the cross axis for this item.
 width | optional | `string \| number` | The width of the container.
 minWidth | optional | `string \| number` | The minimum width of the container.
 maxWidth | optional | `string \| number` | The maximum width of the container.
@@ -105,6 +106,7 @@ Property | Required | Type | Comment
 alignItems | optional | `'baseline' \| 'center' \| 'end' \| 'start' \| 'stretch'` | How to align children along the cross axis.
 justifyContent | optional | `'center' \| 'end' \| 'start' \| 'stretch' \| 'space-around' \| 'space-between' \| 'space-evenly'` | How to align children within the main axis.
 wrap | optional | `boolean` | What happens when children overflow along the main axis.
+alignSelf | optional | `'baseline' \| 'center' \| 'end' \| 'start' \| 'stretch'` | Override alignment along the cross axis for this item.
 width | optional | `string \| number` | The width of the container.
 minWidth | optional | `string \| number` | The minimum width of the container.
 maxWidth | optional | `string \| number` | The maximum width of the container.
@@ -137,6 +139,7 @@ Property | Required | Type | Comment
 alignItems | optional | `'baseline' \| 'center' \| 'end' \| 'start' \| 'stretch'` | How to align children along the cross axis.
 justifyContent | optional | `'center' \| 'end' \| 'start' \| 'stretch' \| 'space-around' \| 'space-between' \| 'space-evenly'` | How to align children within the main axis.
 wrap | optional | `boolean` | What happens when children overflow along the main axis.
+alignSelf | optional | `'baseline' \| 'center' \| 'end' \| 'start' \| 'stretch'` | Override alignment along the cross axis for this item.
 width | optional | `string \| number` | The width of the container.
 minWidth | optional | `string \| number` | The minimum width of the container.
 maxWidth | optional | `string \| number` | The maximum width of the container.

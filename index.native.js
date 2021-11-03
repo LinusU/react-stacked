@@ -53,6 +53,7 @@ exports.Text = function Text (props) {
     Native.View,
     {
       style: {
+        alignSelf: alignItems(props.alignSelf),
         backgroundColor: props.backgroundColor,
         borderBottomLeftRadius: borderRadius(props.borderBottomLeftRadius, props.borderRadius),
         borderBottomRightRadius: borderRadius(props.borderBottomRightRadius, props.borderRadius),
@@ -95,6 +96,7 @@ exports.HStack = function HStack (props) {
     {
       style: {
         alignItems: alignItems(props.alignItems),
+        alignSelf: alignItems(props.alignSelf),
         backgroundColor: props.backgroundColor,
         borderBottomLeftRadius: borderRadius(props.borderBottomLeftRadius, props.borderRadius),
         borderBottomRightRadius: borderRadius(props.borderBottomRightRadius, props.borderRadius),
@@ -128,6 +130,7 @@ exports.VStack = function VStack (props) {
     {
       style: {
         alignItems: alignItems(props.alignItems),
+        alignSelf: alignItems(props.alignSelf),
         backgroundColor: props.backgroundColor,
         borderBottomLeftRadius: borderRadius(props.borderBottomLeftRadius, props.borderRadius),
         borderBottomRightRadius: borderRadius(props.borderBottomRightRadius, props.borderRadius),

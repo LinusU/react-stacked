@@ -1,6 +1,9 @@
 import { FC } from 'react'
 
 interface ContainerProps {
+  /** Override alignment along the cross axis for this item. */
+  alignSelf?: 'baseline' | 'center' | 'end' | 'start' | 'stretch'
+
   /** The width of the container. */
   width?: string | number
   /** The minimum width of the container. */
