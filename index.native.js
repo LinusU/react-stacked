@@ -34,7 +34,7 @@ function padding (specific, axis, general) {
   return undefined
 }
 
-exports.Text = function Text (props) {
+exports.TextStyle = function TextStyle (props) {
   return React.createElement(
     Native.Text,
     {
@@ -45,6 +45,47 @@ exports.Text = function Text (props) {
       }
     },
     props.children
+  )
+}
+
+exports.Text = function Text (props) {
+  return React.createElement(
+    Native.View,
+    {
+      style: {
+        backgroundColor: props.backgroundColor,
+        borderBottomLeftRadius: borderRadius(props.borderBottomLeftRadius, props.borderRadius),
+        borderBottomRightRadius: borderRadius(props.borderBottomRightRadius, props.borderRadius),
+        borderTopLeftRadius: borderRadius(props.borderTopLeftRadius, props.borderRadius),
+        borderTopRightRadius: borderRadius(props.borderTopRightRadius, props.borderRadius),
+        flexBasis: props.basis,
+        flexGrow: props.grow,
+        flexShrink: props.shrink,
+        height: props.height,
+        maxHeight: props.maxHeight,
+        maxWidth: props.maxWidth,
+        minHeight: props.minHeight,
+        minWidth: props.minWidth,
+        paddingBottom: padding(props.paddingBottom, props.paddingVertical, props.padding),
+        paddingLeft: padding(props.paddingLeft, props.paddingHorizontal, props.padding),
+        paddingRight: padding(props.paddingRight, props.paddingHorizontal, props.padding),
+        paddingTop: padding(props.paddingTop, props.paddingVertical, props.padding),
+        width: props.width
+      }
+    },
+    React.createElement(
+      Native.Text,
+      {
+        numberOfLines: props.overflow === 'ellipsis' ? 1 : undefined,
+        style: {
+          color: props.color,
+          fontSize: props.size,
+          fontWeight: props.weight,
+          textAlign: props.align == null ? undefined : props.align
+        }
+      },
+      props.children
+    )
   )
 }
 
