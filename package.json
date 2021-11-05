@@ -2,7 +2,7 @@
   "name": "react-stacked",
   "version": "0.2.1",
   "license": "MIT",
-  "repository": "LinusU/react-zebra",
+  "repository": "LinusU/react-stacked",
   "scripts": {
     "test": "standard && ts-readme-generator --check"
   },
