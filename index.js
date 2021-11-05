@@ -76,14 +76,16 @@ exports.Text = function Text (props) {
         minHeight: (typeof props.minHeight === 'number' ? (props.minHeight + 'px') : props.minHeight),
         minWidth: (typeof props.minWidth === 'number' ? (props.minWidth + 'px') : props.minWidth),
         overflow: props.overflow === 'ellipsis' ? 'hidden' : undefined,
+        overflowWrap: 'anywhere',
         paddingBottom: padding(props.paddingBottom, props.paddingVertical, props.padding),
         paddingLeft: padding(props.paddingLeft, props.paddingHorizontal, props.padding),
         paddingRight: padding(props.paddingRight, props.paddingHorizontal, props.padding),
         paddingTop: padding(props.paddingTop, props.paddingVertical, props.padding),
         textAlign: props.align == null ? undefined : props.align,
         textOverflow: props.overflow === 'ellipsis' ? 'ellipsis' : undefined,
-        whiteSpace: props.overflow === 'ellipsis' ? 'nowrap' : undefined,
-        width: (typeof props.width === 'number' ? (props.width + 'px') : props.width)
+        whiteSpace: props.overflow === 'ellipsis' ? 'nowrap' : 'pre-wrap',
+        width: (typeof props.width === 'number' ? (props.width + 'px') : props.width),
+        wordBreak: 'break-word'
       }
     },
     props.children
