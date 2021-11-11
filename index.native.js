@@ -77,6 +77,7 @@ exports.Text = function Text (props) {
     React.createElement(
       Native.Text,
       {
+        allowFontScaling: props.allowFontScaling,
         numberOfLines: props.overflow === 'ellipsis' ? 1 : undefined,
         style: {
           color: props.color,

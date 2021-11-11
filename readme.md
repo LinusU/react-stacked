@@ -69,6 +69,7 @@ A block of text
 Property | Required | Type | Comment
 -------- | -------- | ---- | -------
 align | optional | `'left' \| 'right' \| 'center' \| 'justify' \| null`
+allowFontScaling | optional | `boolean` | Specifies whether fonts should scale to respect Text Size accessibility settings on supported platforms.
 overflow | optional | `'ellipsis' \| null`
 color | optional | `string`
 size | optional | `string \| number`

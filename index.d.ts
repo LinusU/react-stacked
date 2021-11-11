@@ -53,6 +53,8 @@ export const TextStyle: FC<TextStyleProps>
 
 export interface TextProps extends TextStyleProps, ContainerProps {
   align?: 'left' | 'right' | 'center' | 'justify' | null
+  /** Specifies whether fonts should scale to respect Text Size accessibility settings on supported platforms. */
+  allowFontScaling?: boolean
   overflow?: 'ellipsis' | null
 }
 
