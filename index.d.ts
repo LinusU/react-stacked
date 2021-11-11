@@ -75,3 +75,15 @@ export const HStack: FC<StackProps>
 
 /** A vertical stack */
 export const VStack: FC<StackProps>
+
+export interface ZStackProps extends ContainerProps {
+  /** How to align children along both axis. */
+  align?: 'center' | 'end' | 'start'
+  /** How to align children horizontally. */
+  alignHorizontal?: 'center' | 'end' | 'start'
+  /** How to align children vertically. */
+  alignVertical?: 'center' | 'end' | 'start'
+}
+
+/** A stack with depth */
+export const ZStack: FC<ZStackProps>

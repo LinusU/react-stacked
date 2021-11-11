@@ -163,3 +163,36 @@ borderBottomRightRadius | optional | `number`
 borderTopLeftRadius | optional | `number`
 borderTopRightRadius | optional | `number`
 backgroundColor | optional | `string`
+
+### `<ZStack>`
+
+A stack with depth
+
+Property | Required | Type | Comment
+-------- | -------- | ---- | -------
+align | optional | `'center' \| 'end' \| 'start'` | How to align children along both axis.
+alignHorizontal | optional | `'center' \| 'end' \| 'start'` | How to align children horizontally.
+alignVertical | optional | `'center' \| 'end' \| 'start'` | How to align children vertically.
+alignSelf | optional | `'baseline' \| 'center' \| 'end' \| 'start' \| 'stretch'` | Override alignment along the cross axis for this item.
+width | optional | `string \| number` | The width of the container.
+minWidth | optional | `string \| number` | The minimum width of the container.
+maxWidth | optional | `string \| number` | The maximum width of the container.
+height | optional | `string \| number` | The height of the container.
+minHeight | optional | `string \| number` | The minimum height of the container.
+maxHeight | optional | `string \| number` | The maximum height of the container.
+basis | optional | `string \| number` | The flex basis of the container.
+grow | optional | `string \| number` | The flex grow factor of the container.
+shrink | optional | `string \| number` | The flex shrink factor of the container.
+padding | optional | `string \| number`
+paddingBottom | optional | `string \| number`
+paddingHorizontal | optional | `string \| number`
+paddingLeft | optional | `string \| number`
+paddingRight | optional | `string \| number`
+paddingTop | optional | `string \| number`
+paddingVertical | optional | `string \| number`
+borderRadius | optional | `number`
+borderBottomLeftRadius | optional | `number`
+borderBottomRightRadius | optional | `number`
+borderTopLeftRadius | optional | `number`
+borderTopRightRadius | optional | `number`
+backgroundColor | optional | `string`
