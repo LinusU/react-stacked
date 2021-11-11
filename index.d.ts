@@ -45,7 +45,7 @@ interface ContainerProps {
 export interface TextStyleProps {
   color?: string
   size?: string | number
-  weight?: 'bold'
+  weight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900'
 }
 
 /** An inline text span */

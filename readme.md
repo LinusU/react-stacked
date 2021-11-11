@@ -60,7 +60,7 @@ Property | Required | Type
 -------- | -------- | ----
 color | optional | `string`
 size | optional | `string \| number`
-weight | optional | `'bold'`
+weight | optional | `'normal' \| 'bold' \| '100' \| '200' \| '300' \| '400' \| '500' \| '600' \| '700' \| '800' \| '900'`
 
 ### `<Text>`
 
@@ -73,7 +73,7 @@ allowFontScaling | optional | `boolean` | Specifies whether fonts should scale t
 overflow | optional | `'ellipsis' \| null`
 color | optional | `string`
 size | optional | `string \| number`
-weight | optional | `'bold'`
+weight | optional | `'normal' \| 'bold' \| '100' \| '200' \| '300' \| '400' \| '500' \| '600' \| '700' \| '800' \| '900'`
 alignSelf | optional | `'baseline' \| 'center' \| 'end' \| 'start' \| 'stretch'` | Override alignment along the cross axis for this item.
 width | optional | `string \| number` | The width of the container.
 minWidth | optional | `string \| number` | The minimum width of the container.
