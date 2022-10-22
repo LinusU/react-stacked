@@ -96,6 +96,9 @@ borderBottomLeftRadius | optional | `number`
 borderBottomRightRadius | optional | `number`
 borderTopLeftRadius | optional | `number`
 borderTopRightRadius | optional | `number`
+borderColor | optional | `string`
+borderStyle | optional | `'solid' \| 'dotted' \| 'dashed'`
+borderWidth | optional | `string \| number`
 backgroundColor | optional | `string`
 
 ### `<HStack>`
@@ -129,6 +132,9 @@ borderBottomLeftRadius | optional | `number`
 borderBottomRightRadius | optional | `number`
 borderTopLeftRadius | optional | `number`
 borderTopRightRadius | optional | `number`
+borderColor | optional | `string`
+borderStyle | optional | `'solid' \| 'dotted' \| 'dashed'`
+borderWidth | optional | `string \| number`
 backgroundColor | optional | `string`
 
 ### `<VStack>`
@@ -162,6 +168,9 @@ borderBottomLeftRadius | optional | `number`
 borderBottomRightRadius | optional | `number`
 borderTopLeftRadius | optional | `number`
 borderTopRightRadius | optional | `number`
+borderColor | optional | `string`
+borderStyle | optional | `'solid' \| 'dotted' \| 'dashed'`
+borderWidth | optional | `string \| number`
 backgroundColor | optional | `string`
 
 ### `<ZStack>`
@@ -195,4 +204,7 @@ borderBottomLeftRadius | optional | `number`
 borderBottomRightRadius | optional | `number`
 borderTopLeftRadius | optional | `number`
 borderTopRightRadius | optional | `number`
+borderColor | optional | `string`
+borderStyle | optional | `'solid' \| 'dotted' \| 'dashed'`
+borderWidth | optional | `string \| number`
 backgroundColor | optional | `string`
