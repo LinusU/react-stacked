@@ -44,22 +44,29 @@ interface ContainerProps {
   borderWidth?: string | number
 
   backgroundColor?: string
+
+  children?: React.ReactNode
 }
 
 export interface TextStyleProps {
   color?: string
   size?: string | number
   weight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900'
+
+  children?: React.ReactNode
 }
 
 /** An inline text span */
 export const TextStyle: FC<TextStyleProps>
 
-export interface TextProps extends TextStyleProps, ContainerProps {
+export interface TextProps extends ContainerProps {
   align?: 'left' | 'right' | 'center' | 'justify' | null
   /** Specifies whether fonts should scale to respect Text Size accessibility settings on supported platforms. */
   allowFontScaling?: boolean
+  color?: string
   overflow?: 'ellipsis' | null
+  size?: string | number
+  weight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900'
 }
 
 /** A block of text */

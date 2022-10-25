@@ -61,6 +61,7 @@ Property | Required | Type
 color | optional | `string`
 size | optional | `string \| number`
 weight | optional | `'normal' \| 'bold' \| '100' \| '200' \| '300' \| '400' \| '500' \| '600' \| '700' \| '800' \| '900'`
+children | optional | `React.ReactNode`
 
 ### `<Text>`
 
@@ -70,8 +71,8 @@ Property | Required | Type | Comment
 -------- | -------- | ---- | -------
 align | optional | `'left' \| 'right' \| 'center' \| 'justify' \| null`
 allowFontScaling | optional | `boolean` | Specifies whether fonts should scale to respect Text Size accessibility settings on supported platforms.
-overflow | optional | `'ellipsis' \| null`
 color | optional | `string`
+overflow | optional | `'ellipsis' \| null`
 size | optional | `string \| number`
 weight | optional | `'normal' \| 'bold' \| '100' \| '200' \| '300' \| '400' \| '500' \| '600' \| '700' \| '800' \| '900'`
 alignSelf | optional | `'baseline' \| 'center' \| 'end' \| 'start' \| 'stretch'` | Override alignment along the cross axis for this item.
@@ -100,6 +101,7 @@ borderColor | optional | `string`
 borderStyle | optional | `'solid' \| 'dotted' \| 'dashed'`
 borderWidth | optional | `string \| number`
 backgroundColor | optional | `string`
+children | optional | `React.ReactNode`
 
 ### `<HStack>`
 
@@ -136,6 +138,7 @@ borderColor | optional | `string`
 borderStyle | optional | `'solid' \| 'dotted' \| 'dashed'`
 borderWidth | optional | `string \| number`
 backgroundColor | optional | `string`
+children | optional | `React.ReactNode`
 
 ### `<VStack>`
 
@@ -172,6 +175,7 @@ borderColor | optional | `string`
 borderStyle | optional | `'solid' \| 'dotted' \| 'dashed'`
 borderWidth | optional | `string \| number`
 backgroundColor | optional | `string`
+children | optional | `React.ReactNode`
 
 ### `<ZStack>`
 
@@ -208,3 +212,4 @@ borderColor | optional | `string`
 borderStyle | optional | `'solid' \| 'dotted' \| 'dashed'`
 borderWidth | optional | `string \| number`
 backgroundColor | optional | `string`
+children | optional | `React.ReactNode`
