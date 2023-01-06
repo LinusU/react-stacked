@@ -67,6 +67,7 @@ exports.Text = function Text (props) {
         borderWidth: (typeof props.borderWidth === 'number' ? (props.borderWidth + 'px') : props.borderWidth),
         boxSizing: 'border-box',
         color: props.color,
+        display: props.numberOfLines == null ? undefined : '-webkit-box',
         flexBasis: (typeof props.basis === 'number' ? (props.basis + 'px') : props.basis),
         flexGrow: props.grow,
         flexShrink: props.shrink,
@@ -78,7 +79,7 @@ exports.Text = function Text (props) {
         maxWidth: (typeof props.maxWidth === 'number' ? (props.maxWidth + 'px') : props.maxWidth),
         minHeight: (typeof props.minHeight === 'number' ? (props.minHeight + 'px') : props.minHeight),
         minWidth: (typeof props.minWidth === 'number' ? (props.minWidth + 'px') : props.minWidth),
-        overflow: props.overflow === 'ellipsis' ? 'hidden' : undefined,
+        overflow: props.numberOfLines == null ? undefined : 'hidden',
         overflowWrap: 'anywhere',
         paddingBottom: padding(props.paddingBottom, props.paddingVertical, props.padding),
         paddingLeft: padding(props.paddingLeft, props.paddingHorizontal, props.padding),
@@ -86,10 +87,11 @@ exports.Text = function Text (props) {
         paddingTop: padding(props.paddingTop, props.paddingVertical, props.padding),
         position: props.style && props.style.position,
         textAlign: props.align == null ? undefined : props.align,
-        textOverflow: props.overflow === 'ellipsis' ? 'ellipsis' : undefined,
-        whiteSpace: props.overflow === 'ellipsis' ? 'nowrap' : 'pre-wrap',
+        whiteSpace: 'pre-wrap',
         width: (typeof props.width === 'number' ? (props.width + 'px') : props.width),
-        wordBreak: 'break-word'
+        wordBreak: 'break-word',
+        WebkitBoxOrient: props.numberOfLines == null ? undefined : 'vertical',
+        WebkitLineClamp: props.numberOfLines == null ? undefined : props.numberOfLines
       }
     },
     props.children

@@ -72,7 +72,7 @@ Property | Required | Type | Comment
 align | optional | `'left' \| 'right' \| 'center' \| 'justify' \| null`
 allowFontScaling | optional | `boolean` | Specifies whether fonts should scale to respect Text Size accessibility settings on supported platforms.
 color | optional | `string`
-overflow | optional | `'ellipsis' \| null`
+numberOfLines | optional | `number \| null` | Limit the text to the specified number of lines.
 size | optional | `string \| number`
 weight | optional | `'normal' \| 'bold' \| '100' \| '200' \| '300' \| '400' \| '500' \| '600' \| '700' \| '800' \| '900'`
 alignSelf | optional | `'baseline' \| 'center' \| 'end' \| 'start' \| 'stretch'` | Override alignment along the cross axis for this item.
