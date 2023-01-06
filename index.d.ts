@@ -64,7 +64,8 @@ export interface TextProps extends ContainerProps {
   /** Specifies whether fonts should scale to respect Text Size accessibility settings on supported platforms. */
   allowFontScaling?: boolean
   color?: string
-  overflow?: 'ellipsis' | null
+  /** Limit the text to the specified number of lines. */
+  numberOfLines?: number | null
   size?: string | number
   weight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900'
 }

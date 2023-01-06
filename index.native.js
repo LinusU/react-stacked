@@ -82,7 +82,7 @@ exports.Text = function Text (props) {
       Native.Text,
       {
         allowFontScaling: props.allowFontScaling,
-        numberOfLines: props.overflow === 'ellipsis' ? 1 : undefined,
+        numberOfLines: props.numberOfLines == null ? undefined : props.numberOfLines,
         style: {
           color: props.color,
           fontSize: props.size,
