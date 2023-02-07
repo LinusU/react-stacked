@@ -34,6 +34,13 @@ function padding (specific, axis, general) {
   return undefined
 }
 
+function gap (specific, general) {
+  if (typeof specific === 'number') return specific
+  if (typeof general === 'number') return general
+
+  return undefined
+}
+
 exports.TextStyle = function TextStyle (props) {
   return React.createElement(
     Native.Text,
@@ -110,6 +117,7 @@ exports.HStack = function HStack (props) {
         borderTopLeftRadius: borderRadius(props.borderTopLeftRadius, props.borderRadius),
         borderTopRightRadius: borderRadius(props.borderTopRightRadius, props.borderRadius),
         borderWidth: props.borderWidth,
+        columnGap: gap(props.columnGap, props.gap),
         flexBasis: props.basis,
         flexDirection: 'row',
         flexGrow: props.grow,
@@ -126,6 +134,7 @@ exports.HStack = function HStack (props) {
         paddingRight: padding(props.paddingRight, props.paddingHorizontal, props.padding),
         paddingTop: padding(props.paddingTop, props.paddingVertical, props.padding),
         position: props.style && props.style.position,
+        rowGap: gap(props.rowGap, props.gap),
         width: props.width
       }
     },
@@ -148,6 +157,7 @@ exports.VStack = function VStack (props) {
         borderTopLeftRadius: borderRadius(props.borderTopLeftRadius, props.borderRadius),
         borderTopRightRadius: borderRadius(props.borderTopRightRadius, props.borderRadius),
         borderWidth: props.borderWidth,
+        columnGap: gap(props.columnGap, props.gap),
         flexBasis: props.basis,
         flexDirection: 'column',
         flexGrow: props.grow,
@@ -164,6 +174,7 @@ exports.VStack = function VStack (props) {
         paddingRight: padding(props.paddingRight, props.paddingHorizontal, props.padding),
         paddingTop: padding(props.paddingTop, props.paddingVertical, props.padding),
         position: props.style && props.style.position,
+        rowGap: gap(props.rowGap, props.gap),
         width: props.width
       }
     },

@@ -36,6 +36,13 @@ function padding (specific, axis, general) {
   return undefined
 }
 
+function gap (specific, general) {
+  if (typeof specific === 'number') return specific + 'px'
+  if (typeof general === 'number') return general + 'px'
+
+  return undefined
+}
+
 exports.TextStyle = function TextStyle (props) {
   return React.createElement(
     'span',
@@ -114,6 +121,7 @@ exports.HStack = function HStack (props) {
         borderTopRightRadius: borderRadius(props.borderTopRightRadius, props.borderRadius),
         borderWidth: (typeof props.borderWidth === 'number' ? (props.borderWidth + 'px') : props.borderWidth),
         boxSizing: 'border-box',
+        columnGap: gap(props.columnGap, props.gap),
         display: 'flex',
         flexBasis: (typeof props.basis === 'number' ? (props.basis + 'px') : props.basis),
         flexDirection: 'row',
@@ -131,6 +139,7 @@ exports.HStack = function HStack (props) {
         paddingRight: padding(props.paddingRight, props.paddingHorizontal, props.padding),
         paddingTop: padding(props.paddingTop, props.paddingVertical, props.padding),
         position: props.style && props.style.position,
+        rowGap: gap(props.rowGap, props.gap),
         width: (typeof props.width === 'number' ? (props.width + 'px') : props.width)
       }
     },
@@ -154,6 +163,7 @@ exports.VStack = function VStack (props) {
         borderTopRightRadius: borderRadius(props.borderTopRightRadius, props.borderRadius),
         borderWidth: (typeof props.borderWidth === 'number' ? (props.borderWidth + 'px') : props.borderWidth),
         boxSizing: 'border-box',
+        columnGap: gap(props.columnGap, props.gap),
         display: 'flex',
         flexBasis: (typeof props.basis === 'number' ? (props.basis + 'px') : props.basis),
         flexDirection: 'column',
@@ -171,6 +181,7 @@ exports.VStack = function VStack (props) {
         paddingRight: padding(props.paddingRight, props.paddingHorizontal, props.padding),
         paddingTop: padding(props.paddingTop, props.paddingVertical, props.padding),
         position: props.style && props.style.position,
+        rowGap: gap(props.rowGap, props.gap),
         width: (typeof props.width === 'number' ? (props.width + 'px') : props.width)
       }
     },

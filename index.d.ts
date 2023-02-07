@@ -80,6 +80,13 @@ export interface StackProps extends ContainerProps {
   justifyContent?: 'center' | 'end' | 'start' | 'stretch' | 'space-around' | 'space-between' | 'space-evenly'
   /** What happens when children overflow along the main axis. */
   wrap?: boolean
+
+  /** The size of the gaps (gutters) between rows and columns. */
+  gap?: number
+  /** The size of the gap (gutter) between an element's rows. */
+  rowGap?: number
+  /** The size of the gap (gutter) between an element's columns. */
+  columnGap?: number
 }
 
 /** A horizontal stack */
