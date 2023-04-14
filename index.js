@@ -51,7 +51,8 @@ exports.TextStyle = function TextStyle (props) {
         color: props.color,
         fontFamily: 'system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif',
         fontSize: (props.size === 0) ? 0 : (props.size || '14px'),
-        fontWeight: props.weight
+        fontWeight: props.weight,
+        textDecorationLine: props.decorationLine
       }
     },
     props.children
@@ -94,6 +95,7 @@ exports.Text = function Text (props) {
         paddingTop: padding(props.paddingTop, props.paddingVertical, props.padding),
         position: props.style && props.style.position,
         textAlign: props.align == null ? undefined : props.align,
+        textDecorationLine: props.decorationLine,
         whiteSpace: 'pre-wrap',
         width: (typeof props.width === 'number' ? (props.width + 'px') : props.width),
         wordBreak: 'break-word',

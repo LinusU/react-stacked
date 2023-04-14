@@ -50,6 +50,7 @@ interface ContainerProps {
 
 export interface TextStyleProps {
   color?: string
+  decorationLine?: 'none' | 'underline' | 'line-through' | 'underline line-through'
   size?: string | number
   weight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900'
 
@@ -64,6 +65,7 @@ export interface TextProps extends ContainerProps {
   /** Specifies whether fonts should scale to respect Text Size accessibility settings on supported platforms. */
   allowFontScaling?: boolean
   color?: string
+  decorationLine?: 'none' | 'underline' | 'line-through' | 'underline line-through'
   /** Limit the text to the specified number of lines. */
   numberOfLines?: number | null
   size?: string | number
