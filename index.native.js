@@ -49,7 +49,8 @@ exports.TextStyle = function TextStyle (props) {
         color: props.color,
         fontSize: props.size,
         fontWeight: props.weight,
-        textDecorationLine: props.decorationLine
+        textDecorationLine: props.decorationLine,
+        textTransform: props.transform
       }
     },
     props.children
@@ -96,7 +97,8 @@ exports.Text = function Text (props) {
           fontSize: props.size,
           fontWeight: props.weight,
           textAlign: props.align == null ? undefined : props.align,
-          textDecorationLine: props.decorationLine
+          textDecorationLine: props.decorationLine,
+          textTransform: props.transform
         }
       },
       props.children

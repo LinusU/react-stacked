@@ -61,6 +61,7 @@ Property | Required | Type
 color | optional | `string`
 decorationLine | optional | `'none' \| 'underline' \| 'line-through' \| 'underline line-through'`
 size | optional | `string \| number`
+transform | optional | `'none' \| 'capitalize' \| 'uppercase' \| 'lowercase'`
 weight | optional | `'normal' \| 'bold' \| '100' \| '200' \| '300' \| '400' \| '500' \| '600' \| '700' \| '800' \| '900'`
 children | optional | `React.ReactNode`
 
@@ -76,6 +77,7 @@ color | optional | `string`
 decorationLine | optional | `'none' \| 'underline' \| 'line-through' \| 'underline line-through'`
 numberOfLines | optional | `number \| null` | Limit the text to the specified number of lines.
 size | optional | `string \| number`
+transform | optional | `'none' \| 'capitalize' \| 'uppercase' \| 'lowercase'`
 weight | optional | `'normal' \| 'bold' \| '100' \| '200' \| '300' \| '400' \| '500' \| '600' \| '700' \| '800' \| '900'`
 alignSelf | optional | `'baseline' \| 'center' \| 'end' \| 'start' \| 'stretch'` | Override alignment along the cross axis for this item.
 width | optional | `string \| number` | The width of the container.

@@ -52,6 +52,7 @@ export interface TextStyleProps {
   color?: string
   decorationLine?: 'none' | 'underline' | 'line-through' | 'underline line-through'
   size?: string | number
+  transform?: 'none' | 'capitalize' | 'uppercase' | 'lowercase'
   weight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900'
 
   children?: React.ReactNode
@@ -69,6 +70,7 @@ export interface TextProps extends ContainerProps {
   /** Limit the text to the specified number of lines. */
   numberOfLines?: number | null
   size?: string | number
+  transform?: 'none' | 'capitalize' | 'uppercase' | 'lowercase'
   weight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900'
 }
 
