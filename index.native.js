@@ -11,9 +11,23 @@ function alignItems (input) {
   return input
 }
 
+function borderColor (specific, general) {
+  if (typeof specific === 'string') return specific
+  if (typeof general === 'string') return general
+
+  return undefined
+}
+
 function borderRadius (specific, general) {
   if (typeof specific === 'number') return specific
   if (typeof general === 'number') return general
+
+  return undefined
+}
+
+function borderWidth (specific, general) {
+  if (typeof specific === 'string' || typeof specific === 'number') return specific
+  if (typeof general === 'string' || typeof general === 'number') return general
 
   return undefined
 }
@@ -64,13 +78,19 @@ exports.Text = function Text (props) {
       style: {
         alignSelf: alignItems(props.alignSelf),
         backgroundColor: props.backgroundColor,
+        borderBottomColor: borderColor(props.borderBottomColor, props.borderColor),
         borderBottomLeftRadius: borderRadius(props.borderBottomLeftRadius, props.borderRadius),
         borderBottomRightRadius: borderRadius(props.borderBottomRightRadius, props.borderRadius),
-        borderColor: props.borderColor,
+        borderBottomWidth: borderWidth(props.borderBottomWidth, props.borderWidth),
+        borderLeftColor: borderColor(props.borderLeftColor, props.borderColor),
+        borderLeftWidth: borderWidth(props.borderLeftWidth, props.borderWidth),
+        borderRightColor: borderColor(props.borderRightColor, props.borderColor),
+        borderRightWidth: borderWidth(props.borderRightWidth, props.borderWidth),
         borderStyle: props.borderStyle,
+        borderTopColor: borderColor(props.borderTopColor, props.borderColor),
         borderTopLeftRadius: borderRadius(props.borderTopLeftRadius, props.borderRadius),
         borderTopRightRadius: borderRadius(props.borderTopRightRadius, props.borderRadius),
-        borderWidth: props.borderWidth,
+        borderTopWidth: borderWidth(props.borderTopWidth, props.borderWidth),
         flexBasis: props.basis,
         flexGrow: props.grow,
         flexShrink: props.shrink,
@@ -114,13 +134,19 @@ exports.HStack = function HStack (props) {
         alignItems: alignItems(props.alignItems),
         alignSelf: alignItems(props.alignSelf),
         backgroundColor: props.backgroundColor,
+        borderBottomColor: borderColor(props.borderBottomColor, props.borderColor),
         borderBottomLeftRadius: borderRadius(props.borderBottomLeftRadius, props.borderRadius),
         borderBottomRightRadius: borderRadius(props.borderBottomRightRadius, props.borderRadius),
-        borderColor: props.borderColor,
+        borderBottomWidth: borderWidth(props.borderBottomWidth, props.borderWidth),
+        borderLeftColor: borderColor(props.borderLeftColor, props.borderColor),
+        borderLeftWidth: borderWidth(props.borderLeftWidth, props.borderWidth),
+        borderRightColor: borderColor(props.borderRightColor, props.borderColor),
+        borderRightWidth: borderWidth(props.borderRightWidth, props.borderWidth),
         borderStyle: props.borderStyle,
+        borderTopColor: borderColor(props.borderTopColor, props.borderColor),
         borderTopLeftRadius: borderRadius(props.borderTopLeftRadius, props.borderRadius),
         borderTopRightRadius: borderRadius(props.borderTopRightRadius, props.borderRadius),
-        borderWidth: props.borderWidth,
+        borderTopWidth: borderWidth(props.borderTopWidth, props.borderWidth),
         columnGap: gap(props.columnGap, props.gap),
         flexBasis: props.basis,
         flexDirection: 'row',
@@ -154,13 +180,19 @@ exports.VStack = function VStack (props) {
         alignItems: alignItems(props.alignItems),
         alignSelf: alignItems(props.alignSelf),
         backgroundColor: props.backgroundColor,
+        borderBottomColor: borderColor(props.borderBottomColor, props.borderColor),
         borderBottomLeftRadius: borderRadius(props.borderBottomLeftRadius, props.borderRadius),
         borderBottomRightRadius: borderRadius(props.borderBottomRightRadius, props.borderRadius),
-        borderColor: props.borderColor,
+        borderBottomWidth: borderWidth(props.borderBottomWidth, props.borderWidth),
+        borderLeftColor: borderColor(props.borderLeftColor, props.borderColor),
+        borderLeftWidth: borderWidth(props.borderLeftWidth, props.borderWidth),
+        borderRightColor: borderColor(props.borderRightColor, props.borderColor),
+        borderRightWidth: borderWidth(props.borderRightWidth, props.borderWidth),
         borderStyle: props.borderStyle,
+        borderTopColor: borderColor(props.borderTopColor, props.borderColor),
         borderTopLeftRadius: borderRadius(props.borderTopLeftRadius, props.borderRadius),
         borderTopRightRadius: borderRadius(props.borderTopRightRadius, props.borderRadius),
-        borderWidth: props.borderWidth,
+        borderTopWidth: borderWidth(props.borderTopWidth, props.borderWidth),
         columnGap: gap(props.columnGap, props.gap),
         flexBasis: props.basis,
         flexDirection: 'column',
@@ -194,13 +226,19 @@ exports.ZStack = function ZStack (props) {
         alignItems: alignItems(props.alignHorizontal || props.align),
         alignSelf: alignItems(props.alignSelf),
         backgroundColor: props.backgroundColor,
+        borderBottomColor: borderColor(props.borderBottomColor, props.borderColor),
         borderBottomLeftRadius: borderRadius(props.borderBottomLeftRadius, props.borderRadius),
         borderBottomRightRadius: borderRadius(props.borderBottomRightRadius, props.borderRadius),
-        borderColor: props.borderColor,
+        borderBottomWidth: borderWidth(props.borderBottomWidth, props.borderWidth),
+        borderLeftColor: borderColor(props.borderLeftColor, props.borderColor),
+        borderLeftWidth: borderWidth(props.borderLeftWidth, props.borderWidth),
+        borderRightColor: borderColor(props.borderRightColor, props.borderColor),
+        borderRightWidth: borderWidth(props.borderRightWidth, props.borderWidth),
         borderStyle: props.borderStyle,
+        borderTopColor: borderColor(props.borderTopColor, props.borderColor),
         borderTopLeftRadius: borderRadius(props.borderTopLeftRadius, props.borderRadius),
         borderTopRightRadius: borderRadius(props.borderTopRightRadius, props.borderRadius),
-        borderWidth: props.borderWidth,
+        borderTopWidth: borderWidth(props.borderTopWidth, props.borderWidth),
         flexBasis: props.basis,
         flexDirection: 'column',
         flexGrow: props.grow,

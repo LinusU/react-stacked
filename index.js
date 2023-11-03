@@ -10,9 +10,25 @@ function alignItems (input) {
   return input
 }
 
+function borderColor (specific, general) {
+  if (typeof specific === 'string') return specific
+  if (typeof general === 'string') return general
+
+  return undefined
+}
+
 function borderRadius (specific, general) {
   if (typeof specific === 'number') return specific + 'px'
   if (typeof general === 'number') return general + 'px'
+
+  return undefined
+}
+
+function borderWidth (specific, general) {
+  if (typeof specific === 'number') return specific + 'px'
+  if (typeof specific === 'string') return specific
+  if (typeof general === 'number') return general + 'px'
+  if (typeof general === 'string') return general
 
   return undefined
 }
@@ -67,13 +83,19 @@ exports.Text = function Text (props) {
       style: {
         alignSelf: alignItems(props.alignSelf),
         backgroundColor: props.backgroundColor,
+        borderBottomColor: borderColor(props.borderBottomColor, props.borderColor),
         borderBottomLeftRadius: borderRadius(props.borderBottomLeftRadius, props.borderRadius),
         borderBottomRightRadius: borderRadius(props.borderBottomRightRadius, props.borderRadius),
-        borderColor: props.borderColor,
+        borderBottomWidth: borderWidth(props.borderBottomWidth, props.borderWidth),
+        borderLeftColor: borderColor(props.borderLeftColor, props.borderColor),
+        borderLeftWidth: borderWidth(props.borderLeftWidth, props.borderWidth),
+        borderRightColor: borderColor(props.borderRightColor, props.borderColor),
+        borderRightWidth: borderWidth(props.borderRightWidth, props.borderWidth),
         borderStyle: props.borderStyle,
+        borderTopColor: borderColor(props.borderTopColor, props.borderColor),
         borderTopLeftRadius: borderRadius(props.borderTopLeftRadius, props.borderRadius),
         borderTopRightRadius: borderRadius(props.borderTopRightRadius, props.borderRadius),
-        borderWidth: (typeof props.borderWidth === 'number' ? (props.borderWidth + 'px') : props.borderWidth),
+        borderTopWidth: borderWidth(props.borderTopWidth, props.borderWidth),
         boxSizing: 'border-box',
         color: props.color,
         display: props.numberOfLines == null ? undefined : '-webkit-box',
@@ -117,13 +139,19 @@ exports.HStack = function HStack (props) {
         alignItems: alignItems(props.alignItems),
         alignSelf: alignItems(props.alignSelf),
         backgroundColor: props.backgroundColor,
+        borderBottomColor: borderColor(props.borderBottomColor, props.borderColor),
         borderBottomLeftRadius: borderRadius(props.borderBottomLeftRadius, props.borderRadius),
         borderBottomRightRadius: borderRadius(props.borderBottomRightRadius, props.borderRadius),
-        borderColor: props.borderColor,
+        borderBottomWidth: borderWidth(props.borderBottomWidth, props.borderWidth),
+        borderLeftColor: borderColor(props.borderLeftColor, props.borderColor),
+        borderLeftWidth: borderWidth(props.borderLeftWidth, props.borderWidth),
+        borderRightColor: borderColor(props.borderRightColor, props.borderColor),
+        borderRightWidth: borderWidth(props.borderRightWidth, props.borderWidth),
         borderStyle: props.borderStyle,
+        borderTopColor: borderColor(props.borderTopColor, props.borderColor),
         borderTopLeftRadius: borderRadius(props.borderTopLeftRadius, props.borderRadius),
         borderTopRightRadius: borderRadius(props.borderTopRightRadius, props.borderRadius),
-        borderWidth: (typeof props.borderWidth === 'number' ? (props.borderWidth + 'px') : props.borderWidth),
+        borderTopWidth: borderWidth(props.borderTopWidth, props.borderWidth),
         boxSizing: 'border-box',
         columnGap: gap(props.columnGap, props.gap),
         display: 'flex',
@@ -159,13 +187,19 @@ exports.VStack = function VStack (props) {
         alignItems: alignItems(props.alignItems),
         alignSelf: alignItems(props.alignSelf),
         backgroundColor: props.backgroundColor,
+        borderBottomColor: borderColor(props.borderBottomColor, props.borderColor),
         borderBottomLeftRadius: borderRadius(props.borderBottomLeftRadius, props.borderRadius),
         borderBottomRightRadius: borderRadius(props.borderBottomRightRadius, props.borderRadius),
-        borderColor: props.borderColor,
+        borderBottomWidth: borderWidth(props.borderBottomWidth, props.borderWidth),
+        borderLeftColor: borderColor(props.borderLeftColor, props.borderColor),
+        borderLeftWidth: borderWidth(props.borderLeftWidth, props.borderWidth),
+        borderRightColor: borderColor(props.borderRightColor, props.borderColor),
+        borderRightWidth: borderWidth(props.borderRightWidth, props.borderWidth),
         borderStyle: props.borderStyle,
+        borderTopColor: borderColor(props.borderTopColor, props.borderColor),
         borderTopLeftRadius: borderRadius(props.borderTopLeftRadius, props.borderRadius),
         borderTopRightRadius: borderRadius(props.borderTopRightRadius, props.borderRadius),
-        borderWidth: (typeof props.borderWidth === 'number' ? (props.borderWidth + 'px') : props.borderWidth),
+        borderTopWidth: borderWidth(props.borderTopWidth, props.borderWidth),
         boxSizing: 'border-box',
         columnGap: gap(props.columnGap, props.gap),
         display: 'flex',
@@ -201,13 +235,19 @@ exports.ZStack = function ZStack (props) {
         alignItems: alignItems(props.alignHorizontal || props.align),
         alignSelf: alignItems(props.alignSelf),
         backgroundColor: props.backgroundColor,
+        borderBottomColor: borderColor(props.borderBottomColor, props.borderColor),
         borderBottomLeftRadius: borderRadius(props.borderBottomLeftRadius, props.borderRadius),
         borderBottomRightRadius: borderRadius(props.borderBottomRightRadius, props.borderRadius),
-        borderColor: props.borderColor,
+        borderBottomWidth: borderWidth(props.borderBottomWidth, props.borderWidth),
+        borderLeftColor: borderColor(props.borderLeftColor, props.borderColor),
+        borderLeftWidth: borderWidth(props.borderLeftWidth, props.borderWidth),
+        borderRightColor: borderColor(props.borderRightColor, props.borderColor),
+        borderRightWidth: borderWidth(props.borderRightWidth, props.borderWidth),
         borderStyle: props.borderStyle,
+        borderTopColor: borderColor(props.borderTopColor, props.borderColor),
         borderTopLeftRadius: borderRadius(props.borderTopLeftRadius, props.borderRadius),
         borderTopRightRadius: borderRadius(props.borderTopRightRadius, props.borderRadius),
-        borderWidth: (typeof props.borderWidth === 'number' ? (props.borderWidth + 'px') : props.borderWidth),
+        borderTopWidth: borderWidth(props.borderTopWidth, props.borderWidth),
         boxSizing: 'border-box',
         display: 'flex',
         flexBasis: (typeof props.basis === 'number' ? (props.basis + 'px') : props.basis),

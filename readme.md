@@ -102,8 +102,16 @@ borderBottomRightRadius | optional | `number`
 borderTopLeftRadius | optional | `number`
 borderTopRightRadius | optional | `number`
 borderColor | optional | `string`
+borderBottomColor | optional | `string`
+borderLeftColor | optional | `string`
+borderRightColor | optional | `string`
+borderTopColor | optional | `string`
 borderStyle | optional | `'solid' \| 'dotted' \| 'dashed'`
 borderWidth | optional | `string \| number`
+borderBottomWidth | optional | `string \| number`
+borderLeftWidth | optional | `string \| number`
+borderRightWidth | optional | `string \| number`
+borderTopWidth | optional | `string \| number`
 backgroundColor | optional | `string`
 children | optional | `React.ReactNode`
 
@@ -142,8 +150,16 @@ borderBottomRightRadius | optional | `number`
 borderTopLeftRadius | optional | `number`
 borderTopRightRadius | optional | `number`
 borderColor | optional | `string`
+borderBottomColor | optional | `string`
+borderLeftColor | optional | `string`
+borderRightColor | optional | `string`
+borderTopColor | optional | `string`
 borderStyle | optional | `'solid' \| 'dotted' \| 'dashed'`
 borderWidth | optional | `string \| number`
+borderBottomWidth | optional | `string \| number`
+borderLeftWidth | optional | `string \| number`
+borderRightWidth | optional | `string \| number`
+borderTopWidth | optional | `string \| number`
 backgroundColor | optional | `string`
 children | optional | `React.ReactNode`
 
@@ -182,8 +198,16 @@ borderBottomRightRadius | optional | `number`
 borderTopLeftRadius | optional | `number`
 borderTopRightRadius | optional | `number`
 borderColor | optional | `string`
+borderBottomColor | optional | `string`
+borderLeftColor | optional | `string`
+borderRightColor | optional | `string`
+borderTopColor | optional | `string`
 borderStyle | optional | `'solid' \| 'dotted' \| 'dashed'`
 borderWidth | optional | `string \| number`
+borderBottomWidth | optional | `string \| number`
+borderLeftWidth | optional | `string \| number`
+borderRightWidth | optional | `string \| number`
+borderTopWidth | optional | `string \| number`
 backgroundColor | optional | `string`
 children | optional | `React.ReactNode`
 
@@ -219,7 +243,15 @@ borderBottomRightRadius | optional | `number`
 borderTopLeftRadius | optional | `number`
 borderTopRightRadius | optional | `number`
 borderColor | optional | `string`
+borderBottomColor | optional | `string`
+borderLeftColor | optional | `string`
+borderRightColor | optional | `string`
+borderTopColor | optional | `string`
 borderStyle | optional | `'solid' \| 'dotted' \| 'dashed'`
 borderWidth | optional | `string \| number`
+borderBottomWidth | optional | `string \| number`
+borderLeftWidth | optional | `string \| number`
+borderRightWidth | optional | `string \| number`
+borderTopWidth | optional | `string \| number`
 backgroundColor | optional | `string`
 children | optional | `React.ReactNode`

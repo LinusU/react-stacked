@@ -40,8 +40,18 @@ interface ContainerProps {
   borderTopRightRadius?: number
 
   borderColor?: string
+  borderBottomColor?: string
+  borderLeftColor?: string
+  borderRightColor?: string
+  borderTopColor?: string
+
   borderStyle?: 'solid' | 'dotted' | 'dashed'
+
   borderWidth?: string | number
+  borderBottomWidth?: string | number
+  borderLeftWidth?: string | number
+  borderRightWidth?: string | number
+  borderTopWidth?: string | number
 
   backgroundColor?: string
 
