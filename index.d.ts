@@ -79,6 +79,8 @@ export interface TextProps extends ContainerProps {
   decorationLine?: 'none' | 'underline' | 'line-through' | 'underline line-through'
   /** Limit the text to the specified number of lines. */
   numberOfLines?: number | null
+  /** Rotate the text by the specified degrees. The origin of the transformation follows the text alignment. */
+  rotate?: number
   size?: string | number
   transform?: 'none' | 'capitalize' | 'uppercase' | 'lowercase'
   weight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900'

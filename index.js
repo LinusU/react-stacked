@@ -52,6 +52,13 @@ function padding (specific, axis, general) {
   return undefined
 }
 
+function transformOrigin (align) {
+  if (align === 'right') return 'right center'
+  if (align === 'center') return 'center center'
+
+  return 'left center'
+}
+
 function gap (specific, general) {
   if (typeof specific === 'number') return specific + 'px'
   if (typeof general === 'number') return general + 'px'
@@ -120,6 +127,8 @@ exports.Text = function Text (props) {
         textAlign: props.align == null ? undefined : props.align,
         textDecorationLine: props.decorationLine,
         textTransform: props.transform,
+        transform: props.rotate == null ? undefined : 'rotate(' + props.rotate + 'deg)',
+        transformOrigin: props.rotate == null ? undefined : transformOrigin(props.align),
         whiteSpace: 'pre-wrap',
         width: (typeof props.width === 'number' ? (props.width + 'px') : props.width),
         wordBreak: 'break-word',

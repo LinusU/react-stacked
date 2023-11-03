@@ -76,6 +76,7 @@ allowFontScaling | optional | `boolean` | Specifies whether fonts should scale t
 color | optional | `string`
 decorationLine | optional | `'none' \| 'underline' \| 'line-through' \| 'underline line-through'`
 numberOfLines | optional | `number \| null` | Limit the text to the specified number of lines.
+rotate | optional | `number` | Rotate the text by the specified degrees. The origin of the transformation follows the text alignment.
 size | optional | `string \| number`
 transform | optional | `'none' \| 'capitalize' \| 'uppercase' \| 'lowercase'`
 weight | optional | `'normal' \| 'bold' \| '100' \| '200' \| '300' \| '400' \| '500' \| '600' \| '700' \| '800' \| '900'`

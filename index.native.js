@@ -48,6 +48,13 @@ function padding (specific, axis, general) {
   return undefined
 }
 
+function transformOrigin (align) {
+  if (align === 'right') return 'right center'
+  if (align === 'center') return 'center center'
+
+  return 'left center'
+}
+
 function gap (specific, general) {
   if (typeof specific === 'number') return specific
   if (typeof general === 'number') return general
@@ -104,6 +111,8 @@ exports.Text = function Text (props) {
         paddingRight: padding(props.paddingRight, props.paddingHorizontal, props.padding),
         paddingTop: padding(props.paddingTop, props.paddingVertical, props.padding),
         position: props.style && props.style.position,
+        transform: props.rotate == null ? undefined : 'rotate(' + props.rotate + 'deg)',
+        transformOrigin: props.rotate == null ? undefined : transformOrigin(props.align),
         width: props.width
       }
     },
