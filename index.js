@@ -72,8 +72,7 @@ exports.TextStyle = function TextStyle (props) {
     {
       style: {
         color: props.color,
-        fontFamily: 'system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif',
-        fontSize: (props.size === 0) ? 0 : (props.size || '14px'),
+        fontSize: props.size,
         fontWeight: props.weight,
         textDecorationLine: props.decorationLine,
         textTransform: props.transform
