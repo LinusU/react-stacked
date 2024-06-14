@@ -62,6 +62,7 @@ color | optional | `string`
 decorationLine | optional | `'none' \| 'underline' \| 'line-through' \| 'underline line-through'`
 size | optional | `string \| number`
 transform | optional | `'none' \| 'capitalize' \| 'uppercase' \| 'lowercase'`
+variant | optional | `Array \| 'small-caps' \| 'oldstyle-nums' \| 'lining-nums' \| 'tabular-nums' \| 'proportional-nums' \| string`
 weight | optional | `'normal' \| 'bold' \| '100' \| '200' \| '300' \| '400' \| '500' \| '600' \| '700' \| '800' \| '900'`
 children | optional | `React.ReactNode`
 
@@ -79,6 +80,7 @@ numberOfLines | optional | `number \| null` | Limit the text to the specified nu
 rotate | optional | `number` | Rotate the text by the specified degrees. The origin of the transformation follows the text alignment.
 size | optional | `string \| number`
 transform | optional | `'none' \| 'capitalize' \| 'uppercase' \| 'lowercase'`
+variant | optional | `Array \| 'small-caps' \| 'oldstyle-nums' \| 'lining-nums' \| 'tabular-nums' \| 'proportional-nums' \| string`
 weight | optional | `'normal' \| 'bold' \| '100' \| '200' \| '300' \| '400' \| '500' \| '600' \| '700' \| '800' \| '900'`
 alignSelf | optional | `'baseline' \| 'center' \| 'end' \| 'start' \| 'stretch'` | Override alignment along the cross axis for this item.
 width | optional | `string \| number` | The width of the container.

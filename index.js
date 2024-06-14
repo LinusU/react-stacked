@@ -73,6 +73,7 @@ exports.TextStyle = function TextStyle (props) {
       style: {
         color: props.color,
         fontSize: props.size,
+        fontVariant: props.variant,
         fontWeight: props.weight,
         textDecorationLine: props.decorationLine,
         textTransform: props.transform
@@ -110,6 +111,7 @@ exports.Text = function Text (props) {
         flexShrink: props.shrink,
         fontFamily: 'system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif',
         fontSize: (props.size === 0) ? 0 : (props.size || '14px'),
+        fontVariant: props.variant,
         fontWeight: props.weight,
         height: (typeof props.height === 'number' ? (props.height + 'px') : props.height),
         maxHeight: (typeof props.maxHeight === 'number' ? (props.maxHeight + 'px') : props.maxHeight),

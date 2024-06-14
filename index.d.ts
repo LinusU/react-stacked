@@ -63,6 +63,7 @@ export interface TextStyleProps {
   decorationLine?: 'none' | 'underline' | 'line-through' | 'underline line-through'
   size?: string | number
   transform?: 'none' | 'capitalize' | 'uppercase' | 'lowercase'
+  variant?: Array<'small-caps' | 'oldstyle-nums' | 'lining-nums' | 'tabular-nums' | 'proportional-nums'> | 'small-caps' | 'oldstyle-nums' | 'lining-nums' | 'tabular-nums' | 'proportional-nums' | string
   weight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900'
 
   children?: React.ReactNode
@@ -83,6 +84,7 @@ export interface TextProps extends ContainerProps {
   rotate?: number
   size?: string | number
   transform?: 'none' | 'capitalize' | 'uppercase' | 'lowercase'
+  variant?: Array<'small-caps' | 'oldstyle-nums' | 'lining-nums' | 'tabular-nums' | 'proportional-nums'> | 'small-caps' | 'oldstyle-nums' | 'lining-nums' | 'tabular-nums' | 'proportional-nums' | string
   weight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900'
 }
 
