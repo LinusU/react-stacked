@@ -55,6 +55,7 @@ interface ContainerProps {
 
   backgroundColor?: string
 
+  /** @ignore */
   children?: React.ReactNode
 }
 
@@ -66,6 +67,7 @@ export interface TextStyleProps {
   variant?: Array<'small-caps' | 'oldstyle-nums' | 'lining-nums' | 'tabular-nums' | 'proportional-nums'> | 'small-caps' | 'oldstyle-nums' | 'lining-nums' | 'tabular-nums' | 'proportional-nums' | string
   weight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900'
 
+  /** @ignore */
   children?: React.ReactNode
 }
 

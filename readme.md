@@ -64,7 +64,6 @@ size | optional | `string \| number`
 transform | optional | `'none' \| 'capitalize' \| 'uppercase' \| 'lowercase'`
 variant | optional | `Array \| 'small-caps' \| 'oldstyle-nums' \| 'lining-nums' \| 'tabular-nums' \| 'proportional-nums' \| string`
 weight | optional | `'normal' \| 'bold' \| '100' \| '200' \| '300' \| '400' \| '500' \| '600' \| '700' \| '800' \| '900'`
-children | optional | `React.ReactNode`
 
 ### `<Text>`
 
@@ -116,7 +115,6 @@ borderLeftWidth | optional | `string \| number`
 borderRightWidth | optional | `string \| number`
 borderTopWidth | optional | `string \| number`
 backgroundColor | optional | `string`
-children | optional | `React.ReactNode`
 
 ### `<HStack>`
 
@@ -164,7 +162,6 @@ borderLeftWidth | optional | `string \| number`
 borderRightWidth | optional | `string \| number`
 borderTopWidth | optional | `string \| number`
 backgroundColor | optional | `string`
-children | optional | `React.ReactNode`
 
 ### `<VStack>`
 
@@ -212,7 +209,6 @@ borderLeftWidth | optional | `string \| number`
 borderRightWidth | optional | `string \| number`
 borderTopWidth | optional | `string \| number`
 backgroundColor | optional | `string`
-children | optional | `React.ReactNode`
 
 ### `<ZStack>`
 
@@ -257,4 +253,3 @@ borderLeftWidth | optional | `string \| number`
 borderRightWidth | optional | `string \| number`
 borderTopWidth | optional | `string \| number`
 backgroundColor | optional | `string`
-children | optional | `React.ReactNode`
