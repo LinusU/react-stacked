@@ -70,6 +70,7 @@ exports.TextStyle = function TextStyle (props) {
   return React.createElement(
     'span',
     {
+      className: props.className,
       style: {
         color: props.color,
         fontSize: props.size,
@@ -87,6 +88,7 @@ exports.Text = function Text (props) {
   return React.createElement(
     'div',
     {
+      className: props.className,
       style: {
         alignSelf: alignItems(props.alignSelf),
         backgroundColor: props.backgroundColor,
@@ -145,6 +147,7 @@ exports.HStack = function HStack (props) {
   return React.createElement(
     'div',
     {
+      className: props.className,
       style: {
         alignItems: alignItems(props.alignItems),
         alignSelf: alignItems(props.alignSelf),
@@ -193,6 +196,7 @@ exports.VStack = function VStack (props) {
   return React.createElement(
     'div',
     {
+      className: props.className,
       style: {
         alignItems: alignItems(props.alignItems),
         alignSelf: alignItems(props.alignSelf),
@@ -241,6 +245,7 @@ exports.ZStack = function ZStack (props) {
   return React.createElement(
     'div',
     {
+      className: props.className,
       style: {
         alignItems: alignItems(props.alignHorizontal || props.align),
         alignSelf: alignItems(props.alignSelf),

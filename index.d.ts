@@ -57,6 +57,8 @@ interface ContainerProps {
 
   /** @ignore */
   children?: React.ReactNode
+  /** @ignore */
+  className?: string
 }
 
 export interface TextStyleProps {
@@ -69,6 +71,8 @@ export interface TextStyleProps {
 
   /** @ignore */
   children?: React.ReactNode
+  /** @ignore */
+  className?: string
 }
 
 /** An inline text span */
