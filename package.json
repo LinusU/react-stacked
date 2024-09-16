@@ -11,6 +11,6 @@
   },
   "devDependencies": {
     "standard": "^15.0.1",
-    "ts-readme-generator": "^0.7.3"
+    "ts-readme-generator": "^0.7.4"
   }
 }
