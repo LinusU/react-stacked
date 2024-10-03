@@ -111,6 +111,9 @@ export interface StackProps extends ContainerProps {
   rowGap?: number
   /** The size of the gap (gutter) between an element's columns. */
   columnGap?: number
+
+  /** Set the desired behavior when content does not fit in the element's padding box (overflows) in the horizontal and/or vertical direction */
+  overflow?: 'hidden' | 'visible'
 }
 
 /** A horizontal stack */
@@ -126,6 +129,9 @@ export interface ZStackProps extends ContainerProps {
   alignHorizontal?: 'center' | 'end' | 'start'
   /** How to align children vertically. */
   alignVertical?: 'center' | 'end' | 'start'
+
+  /** Set the desired behavior when content does not fit in the element's padding box (overflows) in the horizontal and/or vertical direction */
+  overflow?: 'hidden' | 'visible'
 }
 
 /** A stack with depth */

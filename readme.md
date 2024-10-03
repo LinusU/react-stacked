@@ -128,6 +128,7 @@ wrap | optional | `boolean` | What happens when children overflow along the main
 gap | optional | `number` | The size of the gaps (gutters) between rows and columns.
 rowGap | optional | `number` | The size of the gap (gutter) between an element's rows.
 columnGap | optional | `number` | The size of the gap (gutter) between an element's columns.
+overflow | optional | `'hidden' \| 'visible'` | Set the desired behavior when content does not fit in the element's padding box (overflows) in the horizontal and/or vertical direction
 alignSelf | optional | `'baseline' \| 'center' \| 'end' \| 'start' \| 'stretch'` | Override alignment along the cross axis for this item.
 width | optional | `string \| number` | The width of the container.
 minWidth | optional | `string \| number` | The minimum width of the container.
@@ -175,6 +176,7 @@ wrap | optional | `boolean` | What happens when children overflow along the main
 gap | optional | `number` | The size of the gaps (gutters) between rows and columns.
 rowGap | optional | `number` | The size of the gap (gutter) between an element's rows.
 columnGap | optional | `number` | The size of the gap (gutter) between an element's columns.
+overflow | optional | `'hidden' \| 'visible'` | Set the desired behavior when content does not fit in the element's padding box (overflows) in the horizontal and/or vertical direction
 alignSelf | optional | `'baseline' \| 'center' \| 'end' \| 'start' \| 'stretch'` | Override alignment along the cross axis for this item.
 width | optional | `string \| number` | The width of the container.
 minWidth | optional | `string \| number` | The minimum width of the container.
@@ -219,6 +221,7 @@ Property | Required | Type | Comment
 align | optional | `'center' \| 'end' \| 'start'` | How to align children along both axis.
 alignHorizontal | optional | `'center' \| 'end' \| 'start'` | How to align children horizontally.
 alignVertical | optional | `'center' \| 'end' \| 'start'` | How to align children vertically.
+overflow | optional | `'hidden' \| 'visible'` | Set the desired behavior when content does not fit in the element's padding box (overflows) in the horizontal and/or vertical direction
 alignSelf | optional | `'baseline' \| 'center' \| 'end' \| 'start' \| 'stretch'` | Override alignment along the cross axis for this item.
 width | optional | `string \| number` | The width of the container.
 minWidth | optional | `string \| number` | The minimum width of the container.
