@@ -68,6 +68,7 @@ exports.TextStyle = function TextStyle (props) {
     {
       style: {
         color: props.color,
+        fontFamily: props.family,
         fontSize: props.size,
         fontVariant: props.variant,
         fontWeight: props.weight,
@@ -124,6 +125,7 @@ exports.Text = function Text (props) {
         numberOfLines: props.numberOfLines == null ? undefined : props.numberOfLines,
         style: {
           color: props.color,
+          fontFamily: props.family,
           fontSize: props.size,
           fontVariant: props.variant,
           fontWeight: props.weight,

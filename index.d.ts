@@ -64,6 +64,7 @@ interface ContainerProps {
 export interface TextStyleProps {
   color?: string
   decorationLine?: 'none' | 'underline' | 'line-through' | 'underline line-through'
+  family?: string
   size?: string | number
   transform?: 'none' | 'capitalize' | 'uppercase' | 'lowercase'
   variant?: Array<'small-caps' | 'oldstyle-nums' | 'lining-nums' | 'tabular-nums' | 'proportional-nums'> | 'small-caps' | 'oldstyle-nums' | 'lining-nums' | 'tabular-nums' | 'proportional-nums' | string
@@ -84,6 +85,7 @@ export interface TextProps extends ContainerProps {
   allowFontScaling?: boolean
   color?: string
   decorationLine?: 'none' | 'underline' | 'line-through' | 'underline line-through'
+  family?: string
   /** Limit the text to the specified number of lines. */
   numberOfLines?: number | null
   /** Rotate the text by the specified degrees. The origin of the transformation follows the text alignment. */

@@ -60,6 +60,7 @@ Property | Required | Type
 -------- | -------- | ----
 color | optional | `string`
 decorationLine | optional | `'none' \| 'underline' \| 'line-through' \| 'underline line-through'`
+family | optional | `string`
 size | optional | `string \| number`
 transform | optional | `'none' \| 'capitalize' \| 'uppercase' \| 'lowercase'`
 variant | optional | `Array \| 'small-caps' \| 'oldstyle-nums' \| 'lining-nums' \| 'tabular-nums' \| 'proportional-nums' \| string`
@@ -75,6 +76,7 @@ align | optional | `'left' \| 'right' \| 'center' \| 'justify' \| null`
 allowFontScaling | optional | `boolean` | Specifies whether fonts should scale to respect Text Size accessibility settings on supported platforms.
 color | optional | `string`
 decorationLine | optional | `'none' \| 'underline' \| 'line-through' \| 'underline line-through'`
+family | optional | `string`
 numberOfLines | optional | `number \| null` | Limit the text to the specified number of lines.
 rotate | optional | `number` | Rotate the text by the specified degrees. The origin of the transformation follows the text alignment.
 size | optional | `string \| number`
