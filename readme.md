@@ -119,6 +119,12 @@ borderLeftWidth | optional | `string \| number`
 borderRightWidth | optional | `string \| number`
 borderTopWidth | optional | `string \| number`
 backgroundColor | optional | `string`
+shadowColor | optional | `string` | The color of the shadow. Defaults to `black`.
+shadowOffsetX | optional | `string \| number` | The offset of the shadow along the x-axis. A positive value moves the shadow to the right.
+shadowOffsetY | optional | `string \| number` | The offset of the shadow along the y-axis. A positive value moves the shadow down.
+shadowBlurRadius | optional | `string \| number` | The blur radius of the shadow. The larger the value, the blurrier the shadow.
+shadowSpreadDistance | optional | `string \| number` | How much larger or smaller the shadow is than the container. A positive value grows the shadow, a negative value shrinks it.
+shadowInset | optional | `boolean` | Draw the shadow inside of the container instead of outside of it.
 
 ### `<HStack>`
 
@@ -167,6 +173,12 @@ borderLeftWidth | optional | `string \| number`
 borderRightWidth | optional | `string \| number`
 borderTopWidth | optional | `string \| number`
 backgroundColor | optional | `string`
+shadowColor | optional | `string` | The color of the shadow. Defaults to `black`.
+shadowOffsetX | optional | `string \| number` | The offset of the shadow along the x-axis. A positive value moves the shadow to the right.
+shadowOffsetY | optional | `string \| number` | The offset of the shadow along the y-axis. A positive value moves the shadow down.
+shadowBlurRadius | optional | `string \| number` | The blur radius of the shadow. The larger the value, the blurrier the shadow.
+shadowSpreadDistance | optional | `string \| number` | How much larger or smaller the shadow is than the container. A positive value grows the shadow, a negative value shrinks it.
+shadowInset | optional | `boolean` | Draw the shadow inside of the container instead of outside of it.
 
 ### `<VStack>`
 
@@ -215,6 +227,12 @@ borderLeftWidth | optional | `string \| number`
 borderRightWidth | optional | `string \| number`
 borderTopWidth | optional | `string \| number`
 backgroundColor | optional | `string`
+shadowColor | optional | `string` | The color of the shadow. Defaults to `black`.
+shadowOffsetX | optional | `string \| number` | The offset of the shadow along the x-axis. A positive value moves the shadow to the right.
+shadowOffsetY | optional | `string \| number` | The offset of the shadow along the y-axis. A positive value moves the shadow down.
+shadowBlurRadius | optional | `string \| number` | The blur radius of the shadow. The larger the value, the blurrier the shadow.
+shadowSpreadDistance | optional | `string \| number` | How much larger or smaller the shadow is than the container. A positive value grows the shadow, a negative value shrinks it.
+shadowInset | optional | `boolean` | Draw the shadow inside of the container instead of outside of it.
 
 ### `<ZStack>`
 
@@ -260,3 +278,9 @@ borderLeftWidth | optional | `string \| number`
 borderRightWidth | optional | `string \| number`
 borderTopWidth | optional | `string \| number`
 backgroundColor | optional | `string`
+shadowColor | optional | `string` | The color of the shadow. Defaults to `black`.
+shadowOffsetX | optional | `string \| number` | The offset of the shadow along the x-axis. A positive value moves the shadow to the right.
+shadowOffsetY | optional | `string \| number` | The offset of the shadow along the y-axis. A positive value moves the shadow down.
+shadowBlurRadius | optional | `string \| number` | The blur radius of the shadow. The larger the value, the blurrier the shadow.
+shadowSpreadDistance | optional | `string \| number` | How much larger or smaller the shadow is than the container. A positive value grows the shadow, a negative value shrinks it.
+shadowInset | optional | `boolean` | Draw the shadow inside of the container instead of outside of it.

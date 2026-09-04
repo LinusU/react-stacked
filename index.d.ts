@@ -55,6 +55,19 @@ interface ContainerProps {
 
   backgroundColor?: string
 
+  /** The color of the shadow. Defaults to `black`. */
+  shadowColor?: string
+  /** The offset of the shadow along the x-axis. A positive value moves the shadow to the right. */
+  shadowOffsetX?: string | number
+  /** The offset of the shadow along the y-axis. A positive value moves the shadow down. */
+  shadowOffsetY?: string | number
+  /** The blur radius of the shadow. The larger the value, the blurrier the shadow. */
+  shadowBlurRadius?: string | number
+  /** How much larger or smaller the shadow is than the container. A positive value grows the shadow, a negative value shrinks it. */
+  shadowSpreadDistance?: string | number
+  /** Draw the shadow inside of the container instead of outside of it. */
+  shadowInset?: boolean
+
   /** @ignore */
   children?: React.ReactNode
   /** @ignore */
