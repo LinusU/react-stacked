@@ -62,6 +62,25 @@ function gap (specific, general) {
   return undefined
 }
 
+function shadowLength (input) {
+  if (typeof input === 'string' || typeof input === 'number') return input
+
+  return 0
+}
+
+function boxShadow (color, offsetX, offsetY, blurRadius, spreadDistance, inset) {
+  if (color == null && offsetX == null && offsetY == null && blurRadius == null && spreadDistance == null && inset == null) return undefined
+
+  return [{
+    blurRadius: shadowLength(blurRadius),
+    color: typeof color === 'string' ? color : 'black',
+    inset: inset === true,
+    offsetX: shadowLength(offsetX),
+    offsetY: shadowLength(offsetY),
+    spreadDistance: shadowLength(spreadDistance)
+  }]
+}
+
 exports.TextStyle = function TextStyle (props) {
   return React.createElement(
     Native.Text,
@@ -101,6 +120,7 @@ exports.Text = function Text (props) {
         borderTopLeftRadius: borderRadius(props.borderTopLeftRadius, props.borderRadius),
         borderTopRightRadius: borderRadius(props.borderTopRightRadius, props.borderRadius),
         borderTopWidth: borderWidth(props.borderTopWidth, props.borderWidth),
+        boxShadow: boxShadow(props.shadowColor, props.shadowOffsetX, props.shadowOffsetY, props.shadowBlurRadius, props.shadowSpreadDistance, props.shadowInset),
         flexBasis: props.basis,
         flexGrow: props.grow,
         flexShrink: props.shrink,
@@ -162,6 +182,7 @@ exports.HStack = function HStack (props) {
         borderTopLeftRadius: borderRadius(props.borderTopLeftRadius, props.borderRadius),
         borderTopRightRadius: borderRadius(props.borderTopRightRadius, props.borderRadius),
         borderTopWidth: borderWidth(props.borderTopWidth, props.borderWidth),
+        boxShadow: boxShadow(props.shadowColor, props.shadowOffsetX, props.shadowOffsetY, props.shadowBlurRadius, props.shadowSpreadDistance, props.shadowInset),
         columnGap: gap(props.columnGap, props.gap),
         flexBasis: props.basis,
         flexDirection: 'row',
@@ -209,6 +230,7 @@ exports.VStack = function VStack (props) {
         borderTopLeftRadius: borderRadius(props.borderTopLeftRadius, props.borderRadius),
         borderTopRightRadius: borderRadius(props.borderTopRightRadius, props.borderRadius),
         borderTopWidth: borderWidth(props.borderTopWidth, props.borderWidth),
+        boxShadow: boxShadow(props.shadowColor, props.shadowOffsetX, props.shadowOffsetY, props.shadowBlurRadius, props.shadowSpreadDistance, props.shadowInset),
         columnGap: gap(props.columnGap, props.gap),
         flexBasis: props.basis,
         flexDirection: 'column',
@@ -256,6 +278,7 @@ exports.ZStack = function ZStack (props) {
         borderTopLeftRadius: borderRadius(props.borderTopLeftRadius, props.borderRadius),
         borderTopRightRadius: borderRadius(props.borderTopRightRadius, props.borderRadius),
         borderTopWidth: borderWidth(props.borderTopWidth, props.borderWidth),
+        boxShadow: boxShadow(props.shadowColor, props.shadowOffsetX, props.shadowOffsetY, props.shadowBlurRadius, props.shadowSpreadDistance, props.shadowInset),
         flexBasis: props.basis,
         flexDirection: 'column',
         flexGrow: props.grow,
